@@ -1,24 +1,49 @@
-# README
+# Simple Scraper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+`Simple Scraper` is a Ruby on Rails app that scrapes HTML content from a specified URL using CSS selectors or meta tags. It supports both programmatic usage and a simple web interface
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Scrapes HTML content using Nokogiri.
+- Supports CSS selector-based and meta tag extraction.
+- Caches fetched HTML responses to optimize performance.
+- Includes a minimal web UI for quick manual testing.
 
-* System dependencies
+## Installation
 
-* Configuration
+1. Add the required gems in your `Gemfile`:
 
-* Database creation
+    ```ruby
+    gem 'redis'
+    gem 'rspec-rails'
+    gem 'nokogiri'
+    gem 'faraday'
+    ```
 
-* Database initialization
+2. Install the gems:
 
-* How to run the test suite
+    ```bash
+    bundle install
+    ```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Instructions
 
-* Deployment instructions
+1. Start your Rails server:
 
-* ...
+    ```bash
+    rails s
+    ```
+
+2. Visit the root page to open the scraper form
+3. Submit a scrape request:
+   - Enter a valid URL (e.g `https://example.com`).
+   - Provide a JSON object for the fields to scrape (e.g `{"rating_count": ".ratingCount", "meta": ["keywords"]}`)
+4. Click **“Scrape”** to view the result
+
+## Testing
+
+Run the test suite using RSpec:
+
+```bash
+bundle exec rspec
+```
