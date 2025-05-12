@@ -1,0 +1,15 @@
+<h1>Simple Scraper</h1>
+
+<%= form_with url: data_path, method: :get, local: true do |f| %>
+  <div style="margin-bottom: 10px">
+    <%= f.label :url, "URL:", style: "display: block; margin-bottom: 5px" %>
+    <%= f.text_field :url, placeholder: "https://example.com", style: "width: 25%" %>
+  </div>
+
+  <div style="margin-bottom: 10px">
+    <%= f.label :fields, "Fields (JSON format):", style: "display: block; margin-bottom: 5px" %>
+    <%= f.text_area :fields, rows: 6, placeholder: '{ "rating_count": ".ratingCount", "price": ".price" }', style: "width: 50%" %>
+  </div>
+
+  <%= f.submit "Scrape", style: "padding: 8px 16px" %>
+<% end %>
