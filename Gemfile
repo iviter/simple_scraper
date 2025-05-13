@@ -15,7 +15,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "brakeman", require: false
-  gem "rspec-rails", "~> 7.1"
+  gem "rspec-rails", "~> 8.0"
   gem "pry-rails", "~> 0.3.11"
   gem "rubocop-rails-omakase", require: false
 end
