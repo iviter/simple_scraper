@@ -90,11 +90,11 @@ GEM
     diff-lcs (1.6.2)
     drb (2.2.1)
     erubi (1.13.1)
-    faraday (2.13.1)
+    faraday (2.13.2)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
-    faraday-net_http (3.4.0)
+    faraday-net_http (3.4.1)
       net-http (>= 0.5.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -109,7 +109,7 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.11.3)
+    json (2.12.2)
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -313,7 +313,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
-  faraday (~> 2.12, >= 2.12.2)
+  faraday (~> 2.13)
   importmap-rails
   nokogiri (~> 1.18, >= 1.18.8)
   propshaft
