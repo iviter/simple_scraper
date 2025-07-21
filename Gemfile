@@ -7,7 +7,7 @@ gem "sqlite3", ">= 2.1"
 gem "faraday", "~> 2.12", ">= 2.12.2"
 gem "puma", ">= 5.0"
 gem "importmap-rails"
-gem "nokogiri", "~> 1.18", ">= 1.18.8"
+gem "nokogiri", "~> 1.18"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
