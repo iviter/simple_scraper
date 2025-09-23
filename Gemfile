@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 8.0.2"
+gem "rails", "~> 8.0.3"
 gem "redis", "~> 5.4"
 gem "propshaft"
 gem "sqlite3", ">= 2.1"
